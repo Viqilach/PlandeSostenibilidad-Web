@@ -1,0 +1,632 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CircularVinted — Coca-Cola Ecodiseño</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,700;0,9..144,900;1,9..144,300&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="Estilos.css" />
+</head>
+
+<body>
+
+  <!-- TOPBAR -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#inicio">
+        <span class="brand__dot"></span>
+        <span class="brand__name">Circular<em>Vinted</em></span>
+      </a>
+
+      <nav class="nav">
+        <a href="#market">Marketplace</a>
+        <a href="#producto">Producto</a>
+        <a href="#ciclo">Ciclo circular</a>
+        <a href="#normativa">Normativa</a>
+        <a href="#ods">ODS</a>
+      </nav>
+
+      <div class="actions">
+        <button class="btn btn--ghost" type="button">Iniciar sesión</button>
+        <button class="btn btn--primary" type="button">+ Subir producto</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="hero__bg-text" aria-hidden="true">CIRCULAR</div>
+
+    <div class="container hero__grid">
+      <div class="hero__text">
+        <p class="chip">
+          <span class="chip__dot"></span>
+          Economía circular · Ecodiseño · Reciclabilidad
+        </p>
+
+        <h1>
+          Un <em>"Vinted"</em><br/>
+          para productos<br/>
+          industriales,<br/>
+          pero <span class="h1__accent">circular.</span>
+        </h1>
+
+        <p class="lead">
+          Portal que muestra cómo convertir la botella de Coca-Cola de 500 ml en un
+          producto de economía circular: normativa, ciclo de vida, ecodiseño e impacto ambiental.
+        </p>
+
+        <div class="hero__cta">
+          <a class="btn btn--primary btn--lg" href="#market">Ver marketplace</a>
+          <a class="btn btn--ghost btn--lg" href="#producto">Ver detalle del producto</a>
+        </div>
+
+        <div class="hero__mini">
+          <div class="miniCard">
+            <div class="miniCard__icon">♻</div>
+            <div>
+              <strong>100% reciclable</strong>
+              <p class="muted">Diseño monomaterial orientado al retorno.</p>
+            </div>
+          </div>
+          <div class="miniCard">
+            <div class="miniCard__icon">🌿</div>
+            <div>
+              <strong>Menos CO₂</strong>
+              <p class="muted">rPET + logística optimizada = menor huella.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD HERO -->
+      <div class="hero__card">
+        <article class="productCard">
+          <div class="productCard__ribbon">EDICIÓN CIRCULAR</div>
+
+          <div class="productCard__top">
+            <div class="brandRow">
+              <img class="logo" src="Logo de Coca-Cola.png" alt="Logo Coca-Cola" />
+              <span class="verified">✓ Verificado</span>
+            </div>
+            <span class="badge">100% rPET</span>
+          </div>
+
+          <div class="productCard__media">
+            <div class="productCard__glow"></div>
+            <img class="productImg" src="botella-cocacola-500.png" alt="Botella Coca-Cola 500ml" />
+          </div>
+
+          <div class="productCard__body">
+            <h3>Botella Coca-Cola 500 ml</h3>
+            <p class="muted">Envase PET optimizado · trazabilidad QR · devolución con incentivo</p>
+
+            <div class="tagRow">
+              <span class="tag">Tapón unido</span>
+              <span class="tag">Monomaterial</span>
+              <span class="tag">Retorno</span>
+              <span class="tag">QR</span>
+            </div>
+
+            <div class="priceRow">
+              <div>
+                <div class="price">€1,20</div>
+                <div class="muted small">+ €0,10 depósito reembolsable</div>
+              </div>
+              <a class="btn btn--primary" href="#producto">Ver detalle →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Stats flotantes -->
+        <div class="hero__stats">
+          <div class="statBadge">
+            <span class="statBadge__num">30%</span>
+            <span class="statBadge__label">menos plástico</span>
+          </div>
+          <div class="statBadge">
+            <span class="statBadge__num">↑90%</span>
+            <span class="statBadge__label">tasa recogida</span>
+          </div>
+          <div class="statBadge">
+            <span class="statBadge__num">ODS 12</span>
+            <span class="statBadge__label">cumplimiento</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+
+    <!-- MARKETPLACE -->
+    <section id="market" class="section">
+      <div class="section__head">
+        <div>
+          <p class="section__label">Explorar</p>
+          <h2>Marketplace circular</h2>
+          <p class="muted">Demo de productos industriales con enfoque de economía circular.</p>
+        </div>
+      </div>
+
+      <div class="filters">
+        <div class="search-wrap">
+          <span class="search-icon">⌕</span>
+          <input class="input" type="search" placeholder="Buscar producto, material, etiqueta..." />
+        </div>
+        <select class="input">
+          <option>Ordenar: Relevancia</option>
+          <option>Menor impacto</option>
+          <option>Mayor % reciclado</option>
+        </select>
+        <select class="input">
+          <option>Categoría: Bebidas</option>
+          <option>Envases</option>
+          <option>Hogar</option>
+        </select>
+      </div>
+
+      <div class="grid">
+        <!-- Card 1 — featured -->
+        <article class="card card--featured">
+          <div class="card__img">
+            <span class="card__label">Destacado</span>
+            <img class="thumbImg" src="botella-cocacola-500.png" alt="Botella" />
+          </div>
+          <div class="card__body">
+            <div class="card__top">
+              <h3 class="card__title">Botella Circular 500 ml</h3>
+              <span class="badge badge--soft">rPET</span>
+            </div>
+            <p class="card__text muted">Ecodiseño: peso reducido, reciclabilidad total, retorno y trazabilidad QR.</p>
+            <div class="card__eco">
+              <span class="ecoTag">♻ Reciclable</span>
+              <span class="ecoTag">🌿 CO₂ reducido</span>
+              <span class="ecoTag">💧 Agua eficiente</span>
+            </div>
+            <div class="card__bottom">
+              <span class="card__price">€1,20 <span class="muted small">+ €0,10 dep.</span></span>
+              <a class="btn btn--sm btn--primary" href="#producto">Ver →</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="card">
+          <div class="card__img card__img--blue">
+            <img class="thumbImg" src="Agua.png" alt="Gestión del agua" />
+          </div>
+          <div class="card__body">
+            <div class="card__top">
+              <h3 class="card__title">Gestión del agua</h3>
+              <span class="badge badge--ghost">ODS 6</span>
+            </div>
+            <p class="card__text muted">Programas de gestión hídrica eficiente y reposición en comunidades.</p>
+            <div class="card__eco">
+              <span class="ecoTag">💧 ODS 6</span>
+            </div>
+            <div class="card__bottom">
+              <span class="card__price muted">Info</span>
+              <button class="btn btn--sm btn--ghost" type="button">Próximamente</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="card">
+          <div class="card__img card__img--green">
+            <span style="font-size:3.5rem;">♻️</span>
+          </div>
+          <div class="card__body">
+            <div class="card__top">
+              <h3 class="card__title">Packaging eco</h3>
+              <span class="badge badge--ghost">Ecodiseño</span>
+            </div>
+            <p class="card__text muted">Envases monomaterial con etiquetas fácilmente separables.</p>
+            <div class="card__eco">
+              <span class="ecoTag">♻ Monomaterial</span>
+            </div>
+            <div class="card__bottom">
+              <span class="card__price muted">Info</span>
+              <button class="btn btn--sm btn--ghost" type="button">Próximamente</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- DETALLE DEL PRODUCTO -->
+    <section id="producto" class="section">
+      <div class="section__head">
+        <p class="section__label">Ficha completa</p>
+        <h2>Detalle del producto</h2>
+        <p class="muted">Normativa · Ciclo de vida · Ecodiseño · Impacto ambiental.</p>
+      </div>
+
+      <div class="product">
+
+        <!-- COLUMNA IZQUIERDA: MEDIA -->
+        <div class="product__media">
+          <div class="product__img">
+            <div class="product__img-glow"></div>
+            <img class="productImgBig" src="botella-cocacola-500.png" alt="Botella Coca-Cola 500ml" />
+          </div>
+
+          <div class="qrBox">
+            <img class="qrImg" src="QR.png" alt="QR de trazabilidad" />
+            <div>
+              <strong>QR de trazabilidad</strong>
+              <p class="muted small">Muestra origen del material, % reciclado y pasos de devolución.</p>
+            </div>
+          </div>
+
+          <div class="iconLine">
+            <div class="iconItem">
+              <span class="iconEmoji">♻️</span>
+              <span>Reciclaje</span>
+            </div>
+            <div class="iconItem">
+              <span class="iconEmoji">🌿</span>
+              <span>CO₂</span>
+            </div>
+            <div class="iconItem">
+              <span class="iconEmoji">💧</span>
+              <span>Agua</span>
+            </div>
+            <div class="iconItem">
+              <span class="iconEmoji">🧴</span>
+              <span>Envase</span>
+            </div>
+          </div>
+
+          <!-- Impacto rápido -->
+          <div class="quickImpact">
+            <div class="qi__item qi__item--good">
+              <span class="qi__num">↓30%</span>
+              <span class="qi__label">Plástico virgen</span>
+            </div>
+            <div class="qi__item qi__item--good">
+              <span class="qi__num">↓25%</span>
+              <span class="qi__label">Emisiones CO₂</span>
+            </div>
+            <div class="qi__item qi__item--good">
+              <span class="qi__num">↑90%</span>
+              <span class="qi__label">Tasa reciclaje</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- COLUMNA DERECHA: INFO -->
+        <div class="product__info">
+
+          <div class="product__head">
+            <div class="brandRow">
+              <img class="logo" src="Logo de Coca-Cola.png" alt="Logo Coca-Cola" />
+              <span class="verified">✓ Verificado</span>
+              <span class="badge">100% rPET</span>
+            </div>
+            <h3>Botella Coca-Cola 500 ml — Edición Circular</h3>
+            <p class="muted">Producto demo: reciclabilidad, retorno incentivado, reducción de residuos y trazabilidad digital.</p>
+          </div>
+
+          <div class="pillrow">
+            <span class="pill pill--green">Tapón unido</span>
+            <span class="pill pill--green">Etiqueta separable</span>
+            <span class="pill">Diseño monomaterial</span>
+            <span class="pill">Logística inversa</span>
+          </div>
+
+          <div class="product__priceRow">
+            <div>
+              <div class="price price--big">€1,20</div>
+              <div class="muted small">Depósito: €0,10 · se devuelve al retornar el envase</div>
+            </div>
+            <div class="product__buttons">
+              <button class="btn btn--primary" type="button">Comprar</button>
+              <button class="btn btn--ghost" type="button">↩ Devolver envase</button>
+            </div>
+          </div>
+
+          <!-- ACORDEÓN -->
+          <div class="accordion">
+
+            <details open>
+              <summary>
+                <span class="summary__icon">⚖</span>
+                Normativa ambiental implicada
+              </summary>
+              <div class="norm__grid">
+                <div class="normCard">
+                  <div class="normCard__num">EU</div>
+                  <div>
+                    <strong>Directiva (UE) 2019/904</strong>
+                    <p class="muted small">Plásticos de un solo uso: tapón unido, recogida ≥77%, mínimo de reciclado en botellas.</p>
+                  </div>
+                </div>
+                <div class="normCard">
+                  <div class="normCard__num">ES</div>
+                  <div>
+                    <strong>Ley 7/2022 (España)</strong>
+                    <p class="muted small">Residuos, economía circular y responsabilidad ampliada del productor. Impuesto al plástico no reutilizable.</p>
+                  </div>
+                </div>
+                <div class="normCard">
+                  <div class="normCard__num">EU</div>
+                  <div>
+                    <strong>Reglamento de envases</strong>
+                    <p class="muted small">Reciclabilidad, reducción del gramaje, diseño monomaterial y eliminación de componentes problemáticos.</p>
+                  </div>
+                </div>
+                <div class="normCard">
+                  <div class="normCard__num">ISO</div>
+                  <div>
+                    <strong>ISO 14001</strong>
+                    <p class="muted small">Sistema de Gestión Ambiental: impactos, emisiones, ciclo de vida y auditorías periódicas.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span class="summary__icon">🔄</span>
+                Ciclo de vida del producto (ACV)
+              </summary>
+              <div class="acv">
+                <div class="acv__step">
+                  <div class="acv__dot acv__dot--red"></div>
+                  <div>
+                    <strong>1. Extracción de materias primas</strong>
+                    <p class="muted small">Petróleo → PET virgen. Mayor impacto ambiental. Solución: sustituir por rPET.</p>
+                  </div>
+                </div>
+                <div class="acv__line"></div>
+                <div class="acv__step">
+                  <div class="acv__dot"></div>
+                  <div>
+                    <strong>2. Producción del envase</strong>
+                    <p class="muted small">Transformación, moldeado, tapón y etiquetas. Reducción de gramaje y componentes.</p>
+                  </div>
+                </div>
+                <div class="acv__line"></div>
+                <div class="acv__step">
+                  <div class="acv__dot"></div>
+                  <div>
+                    <strong>3. Llenado y distribución</strong>
+                    <p class="muted small">Transporte, refrigeración y distribución masiva. Optimización logística para reducir huella.</p>
+                  </div>
+                </div>
+                <div class="acv__line"></div>
+                <div class="acv__step">
+                  <div class="acv__dot"></div>
+                  <div>
+                    <strong>4. Consumo</strong>
+                    <p class="muted small">Bajo impacto directo. Clave: correcta separación y retorno del envase por el consumidor.</p>
+                  </div>
+                </div>
+                <div class="acv__line"></div>
+                <div class="acv__step">
+                  <div class="acv__dot acv__dot--green"></div>
+                  <div>
+                    <strong>5. Fin de vida → Circuito cerrado</strong>
+                    <p class="muted small">Retorno del envase → triturado → nuevo rPET → nueva botella. Economía circular real.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span class="summary__icon">🎨</span>
+                Ecodiseño aplicado al producto
+              </summary>
+              <div class="ecoGrid">
+                <div class="ecoItem">
+                  <span class="ecoEmoji">♻️</span>
+                  <div>
+                    <h4>Diseño para reciclar</h4>
+                    <p class="muted small">Monomaterial, etiqueta separable y tapón unido según Directiva EU.</p>
+                  </div>
+                </div>
+                <div class="ecoItem">
+                  <span class="ecoEmoji">📦</span>
+                  <div>
+                    <h4>Menos material</h4>
+                    <p class="muted small">Reducción del grosor y peso del envase. Menos impacto en producción y transporte.</p>
+                  </div>
+                </div>
+                <div class="ecoItem">
+                  <span class="ecoEmoji">🌿</span>
+                  <div>
+                    <h4>rPET en lugar de PET virgen</h4>
+                    <p class="muted small">Reduce emisiones, disminuye dependencia del petróleo y fomenta el mercado del reciclaje.</p>
+                  </div>
+                </div>
+                <div class="ecoItem">
+                  <span class="ecoEmoji">📱</span>
+                  <div>
+                    <h4>Trazabilidad QR</h4>
+                    <p class="muted small">QR con datos de origen, % reciclado y pasos de devolución para consumo responsable.</p>
+                  </div>
+                </div>
+              </div>
+            </details>
+
+            <details>
+              <summary>
+                <span class="summary__icon">🌍</span>
+                Minimización del impacto ambiental
+              </summary>
+              <div class="impact">
+                <div class="impact__item">
+                  <div class="impact__icon">↓</div>
+                  <h4>Residuos</h4>
+                  <p class="muted small">Sistema de retorno con incentivo económico (€0,10). Mayor tasa de reciclaje y reducción de vertederos.</p>
+                </div>
+                <div class="impact__item">
+                  <div class="impact__icon">↓</div>
+                  <h4>CO₂</h4>
+                  <p class="muted small">Uso de rPET, menos energía en fabricación y optimización de rutas logísticas.</p>
+                </div>
+                <div class="impact__item">
+                  <div class="impact__icon">↓</div>
+                  <h4>Recursos naturales</h4>
+                  <p class="muted small">Menor extracción de petróleo gracias a la reutilización de materiales reciclados.</p>
+                </div>
+                <div class="impact__item">
+                  <div class="impact__icon">♾</div>
+                  <h4>Ecosistemas</h4>
+                  <p class="muted small">Menos contaminación marina, menor dispersión de plásticos y reducción de microplásticos.</p>
+                </div>
+              </div>
+            </details>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NORMATIVA VISUAL -->
+    <section id="normativa" class="section section--dark">
+      <div class="section__head section__head--light">
+        <p class="section__label section__label--light">Marco legal</p>
+        <h2 class="text-light">Normativa ambiental</h2>
+        <p class="muted-light">Las 4 normas clave que condicionan el diseño circular del envase.</p>
+      </div>
+
+      <div class="normBanner">
+        <div class="normBanner__item">
+          <div class="normBanner__badge">2019/904</div>
+          <h3>Plásticos de un solo uso</h3>
+          <p>Tapón unido · Recogida ≥77% · Reciclado mínimo</p>
+        </div>
+        <div class="normBanner__item">
+          <div class="normBanner__badge">Ley 7/2022</div>
+          <h3>Economía circular ES</h3>
+          <p>Responsabilidad ampliada del productor · Impuesto plástico</p>
+        </div>
+        <div class="normBanner__item">
+          <div class="normBanner__badge">PPWR</div>
+          <h3>Reglamento envases EU</h3>
+          <p>Reciclabilidad · Reducción de peso · Diseño monomaterial</p>
+        </div>
+        <div class="normBanner__item">
+          <div class="normBanner__badge">ISO</div>
+          <h3>ISO 14001</h3>
+          <p>Gestión ambiental · Mejora continua · Auditorías</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CICLO CIRCULAR -->
+    <section id="ciclo" class="section">
+      <div class="section__head">
+        <p class="section__label">Economía circular</p>
+        <h2>El ciclo en 4 pasos</h2>
+        <p class="muted">Así se convierte una botella convencional en un producto de circuito cerrado.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="step__num">1</div>
+          <div class="step__icon">🛒</div>
+          <h3>Compra</h3>
+          <p class="muted">El consumidor compra el producto con depósito (+€0,10) y recibe información ambiental vía QR.</p>
+          <div class="step__pill">Portal Vinted circular</div>
+        </div>
+        <div class="step">
+          <div class="step__num">2</div>
+          <div class="step__icon">↩</div>
+          <h3>Devuelve</h3>
+          <p class="muted">Escanea el QR, registra la devolución y localiza el punto de recogida más cercano. Recupera el depósito.</p>
+          <div class="step__pill">App / portal digital</div>
+        </div>
+        <div class="step">
+          <div class="step__num">3</div>
+          <div class="step__icon">♻</div>
+          <h3>Recicla</h3>
+          <p class="muted">El envase se tritura, se limpia y se transforma en pellets de rPET de calidad alimentaria.</p>
+          <div class="step__pill">Planta reciclaje</div>
+        </div>
+        <div class="step">
+          <div class="step__num">4</div>
+          <div class="step__icon">🍾</div>
+          <h3>Re-fabrica</h3>
+          <p class="muted">El rPET se convierte en nueva botella. Se cierra el circuito. Menos petróleo, menos CO₂.</p>
+          <div class="step__pill">Circuito cerrado</div>
+        </div>
+      </div>
+
+      <!-- Flecha circular decorativa -->
+      <div class="cycle__arrow" aria-hidden="true">
+        <div class="cycle__text">ECONOMÍA CIRCULAR</div>
+      </div>
+    </section>
+
+    <!-- ODS -->
+    <section id="ods" class="section">
+      <div class="section__head">
+        <p class="section__label">Agenda 2030</p>
+        <h2>ODS vinculados</h2>
+        <p class="muted">Este proyecto contribuye directamente a 5 Objetivos de Desarrollo Sostenible.</p>
+      </div>
+
+      <div class="odsGrid">
+        <div class="odsCard odsCard--12">
+          <div class="odsCard__num">12</div>
+          <h3>Producción y consumo responsables</h3>
+          <p class="muted small">Reciclaje de envases, reducción de residuos y economía circular aplicada al producto.</p>
+        </div>
+        <div class="odsCard odsCard--13">
+          <div class="odsCard__num">13</div>
+          <h3>Acción por el clima</h3>
+          <p class="muted small">Reducción de emisiones CO₂ mediante rPET y optimización logística.</p>
+        </div>
+        <div class="odsCard odsCard--9">
+          <div class="odsCard__num">9</div>
+          <h3>Industria e innovación</h3>
+          <p class="muted small">Innovación en envases sostenibles, digitalización con QR y modernización productiva.</p>
+        </div>
+        <div class="odsCard odsCard--6">
+          <div class="odsCard__num">6</div>
+          <h3>Agua limpia y saneamiento</h3>
+          <p class="muted small">Gestión eficiente del agua en planta y programas de reposición hídrica.</p>
+        </div>
+        <div class="odsCard odsCard--14">
+          <div class="odsCard__num">14</div>
+          <h3>Vida submarina</h3>
+          <p class="muted small">Reducción de plásticos en el mar y disminución de microplásticos en ecosistemas marinos.</p>
+        </div>
+      </div>
+
+      <div class="odsBox">
+        <img class="odsImg" src="Iconos ODS juntos (12, 13, 9, 14, 6).png" alt="ODS juntos — 12, 13, 9, 14, 6" />
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__simple">
+      <div class="brand brand--footer">
+        <span class="brand__dot"></span>
+        <span class="brand__name">Circular<em>Vinted</em></span>
+      </div>
+
+      <nav class="footer__nav">
+        <a href="#market">Marketplace</a>
+        <a href="#producto">Producto</a>
+        <a href="#ciclo">Ciclo circular</a>
+        <a href="#normativa">Normativa</a>
+        <a href="#ods">ODS</a>
+      </nav>
+
+      <p class="muted small footer__copy">© 2026 · ILERNA DAM</p>
+    </div>
+  </footer>
+
+</body>
+</html>
